@@ -15,7 +15,10 @@ class DatabaseSeeder extends Seeder
     {
          $this->call(\Modules\Roles\Database\Seeders\RolesAndPermissionsTableSeeder::class);
          //$this->call(\Modules\Usuarios\Database\Seeders\UsuariosTableSeeder::class);
-         $this->call(\Modules\Empresa\Database\Seeders\EmpresaTableSeeder::class);
-         //$this->call(\Modules\Categoria\Database\Seeders\CategoriaDatabaseSeeder::class);
+         $this->call(\Modules\Company\Database\Seeders\CompanyDatabaseSeeder::class);
+         $this->call(\Modules\Category\Database\Seeders\CategoryDatabaseSeeder::class);
+         $this->call(\Modules\Denomination\Database\Seeders\DenominationDatabaseSeeder::class);
+         $this->call(\Modules\Product\Database\Seeders\ProductDatabaseSeeder::class);
+
     }
 }

@@ -1,4 +1,10 @@
 {
     "Login": true,
-    "Log": true
+    "Log": true,
+    "Company": true,
+    "Denomination": true,
+    "Category": true,
+    "Product": true,
+    "Sale": true,
+    "SaleDetails": true
 }

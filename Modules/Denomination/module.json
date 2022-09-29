@@ -1,0 +1,13 @@
+{
+    "name": "Denomination",
+    "alias": "denomination",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Denomination\\Providers\\DenominationServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

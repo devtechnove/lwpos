@@ -75,7 +75,88 @@
                             </div>
                         </li>
                         @endcan
-                    </ul>
+
+
+                        <!-- end Dashboard Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link {{ request()->routeIs('usuarios.*') ? 'active' : '' }} {{ request()->routeIs('roles.*') ? 'active' : '' }} {{ request()->routeIs('logins.*') ? 'active' : '' }} {{ request()->routeIs('logs.*') ? 'active' : '' }}" href="#sidebarProducts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProducts">
+                                <i class="mdi mdi-database"></i> <span data-key="t-apps">Productos</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarProducts">
+                                <ul class="nav nav-sm flex-column">
+                                    @can('Ver Usuario')
+                                    <li class="nav-item">
+                                        <a href="/category" class="nav-link {{ request()->routeIs('category.*') ? 'active' : '' }}" data-key="t-calendar"> Categorías </a>
+                                    </li>
+                                    @endcan
+                                     @can('Ver Role')
+                                     <li class="nav-item">
+                                        <a href="/product" class="nav-link {{ request()->routeIs('product.*') ? 'active' : '' }}" data-key="t-product"> Productos </a>
+                                    </li>
+                                    @endcan
+
+                                </ul>
+                            </div>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link menu-link {{ request()->routeIs('usuarios.*') ? 'active' : '' }} {{ request()->routeIs('roles.*') ? 'active' : '' }} {{ request()->routeIs('logins.*') ? 'active' : '' }} {{ request()->routeIs('logs.*') ? 'active' : '' }}" href="#sidebarSales" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSales">
+                                <i class="mdi mdi-database"></i> <span data-key="t-apps">Ventas</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarSales">
+                                <ul class="nav nav-sm flex-column">
+                                    @can('Ver Usuario')
+                                    <li class="nav-item">
+                                        <a href="/sale" class="nav-link {{ request()->routeIs('sale.*') ? 'active' : '' }}" data-key="t-calendar"> Ventas </a>
+                                    </li>
+                                    @endcan
+                                </ul>
+                            </div>
+                        </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link menu-link {{ request()->routeIs('usuarios.*') ? 'active' : '' }} {{ request()->routeIs('roles.*') ? 'active' : '' }} {{ request()->routeIs('logins.*') ? 'active' : '' }} {{ request()->routeIs('logs.*') ? 'active' : '' }}" href="#sidebarMonedas" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMonedas">
+                                <i class="mdi mdi-database"></i> <span data-key="t-apps">Monedas</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarMonedas">
+                                <ul class="nav nav-sm flex-column">
+                                    @can('Ver Usuario')
+                                    <li class="nav-item">
+                                        <a href="/denomination" class="nav-link {{ request()->routeIs('denomination.*') ? 'active' : '' }}" data-key="t-calendar"> Ver </a>
+                                    </li>
+                                    @endcan
+                                </ul>
+                            </div>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link menu-link {{ request()->routeIs('usuarios.*') ? 'active' : '' }} {{ request()->routeIs('roles.*') ? 'active' : '' }} {{ request()->routeIs('logins.*') ? 'active' : '' }} {{ request()->routeIs('logs.*') ? 'active' : '' }}" href="#sidebarArqueos" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarArqueos">
+                                <i class="mdi mdi-database"></i> <span data-key="t-apps">Arqueos</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarArqueos">
+                                <ul class="nav nav-sm flex-column">
+                                    @can('Ver Usuario')
+                                    <li class="nav-item">
+                                        <a href="/arqueo" class="nav-link {{ request()->routeIs('arqueo.*') ? 'active' : '' }}" data-key="t-calendar"> Ver </a>
+                                    </li>
+                                    @endcan
+                                </ul>
+                            </div>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link menu-link {{ request()->routeIs('usuarios.*') ? 'active' : '' }} {{ request()->routeIs('roles.*') ? 'active' : '' }} {{ request()->routeIs('logins.*') ? 'active' : '' }} {{ request()->routeIs('logs.*') ? 'active' : '' }}" href="#sidebarReportes" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarReportes">
+                                <i class="mdi mdi-database"></i> <span data-key="t-apps">Reportes</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarReportes">
+                                <ul class="nav nav-sm flex-column">
+                                    @can('Ver Usuario')
+                                    <li class="nav-item">
+                                        <a href="/reportes" class="nav-link {{ request()->routeIs('reportes.*') ? 'active' : '' }}" data-key="t-calendar"> Ver </a>
+                                    </li>
+                                    @endcan
+                                </ul>
+                            </div>
+                        </li>
+
                 </div>
                 <!-- Sidebar -->
             </div>

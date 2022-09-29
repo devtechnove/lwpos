@@ -38,7 +38,7 @@ class HomeController extends Controller
 
             echo getIniciales($nombre);*/
 
-           $empresa = \Modules\Empresa\Entities\Empresa::find(\Auth::user()->empresa_id);
+           $empresa = \Modules\Company\Entities\Company::find(\Auth::user()->empresa_id);
            $fecha_actual = date('d-m-Y');
            $fecha_expiracion = date("d-m-Y",strtotime($empresa->fecha_registro."+ 7 days"));
 

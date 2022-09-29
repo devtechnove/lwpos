@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->smallInteger('status');
             $table->unsignedBigInteger('empresa_id');
-            $table->foreign('empresa_id')->references('id')->on('empresas')->restrictOnDelete();
+            $table->foreign('empresa_id')->references('id')->on('companies')->restrictOnDelete();
             $table->unsignedBigInteger('role_id');
             $table->foreign('role_id')->references('id')->on('roles')->restrictOnDelete();
             $table->rememberToken();
